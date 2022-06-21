@@ -136,7 +136,7 @@ async def next_page(bot, query):
         off_set = offset - 10
     if n_offset == 0:
         btn.append(
-            [InlineKeyboardButton("🛡️ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+            [InlineKeyboardButton("🛡️𝐁𝐀𝐂𝐊", callback_data=f"next_{req}_{key}_{off_set}"),
              InlineKeyboardButton(text=f"ᴄʜᴇᴄᴋ ᴘᴍ 🔗!", url=f"https://t.me/{temp.U_NAME}"),
              InlineKeyboardButton(f"💠 {round(int(offset) / 10) + 1} / {round(total / 10)}",
                                   callback_data="pages")]
@@ -149,7 +149,7 @@ async def next_page(bot, query):
     else:
         btn.append(
             [
-                InlineKeyboardButton("🛡️ ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
+                InlineKeyboardButton("🛡️𝐁𝐀𝐂𝐊", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"💠ᴘᴀɢᴇ💠 {round(int(offset) / 10) + 1} / {round(total / 10)}", callback_data="pages"),
                 InlineKeyboardButton("ɴᴇxᴛ 🛡️", callback_data=f"next_{req}_{key}_{n_offset}")]
             )
@@ -273,7 +273,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton(f"{stat}", callback_data=f"{cb}:{group_id}"),
              InlineKeyboardButton("DELETE", callback_data=f"deletecb:{group_id}")],
-            [InlineKeyboardButton("BACK", callback_data="backcb")]
+            [InlineKeyboardButton("𝐁𝐀𝐂𝐊", callback_data="backcb")]
         ])
 
         await query.message.edit_text(
@@ -593,7 +593,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         InlineKeyboardButton(text="𝖶𝗂𝗍𝗁𝗈𝗎𝗍 𝖡𝖦", callback_data="circlewithoutbg"),
                     ],
                     [
-                        InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')
+                        InlineKeyboardButton('𝐁𝐀𝐂𝐊', callback_data='photo')
                     ]
                 ]
             ),
@@ -612,7 +612,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         InlineKeyboardButton(text="𝖡𝗅𝗎𝖾", callback_data="blue"),
                     ],
                     [
-                        InlineKeyboardButton('𝙱𝙰𝙲𝙺', callback_data='photo')   
+                        InlineKeyboardButton('𝐁𝐀𝐂𝐊', callback_data='photo')   
                     ],
                 ]
             ),
